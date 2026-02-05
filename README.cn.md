@@ -595,7 +595,7 @@ Agora 提供实时互动 API，为全球数十亿分钟的实时语音、视频�
 - [Agora Documentation](https://docs.agora.io/)
 - [Agora IoT SDK](https://docs.agora.io/en/iot)
 - [Conversational AI Agent API](https://docs.agora.io/en/conversational-ai)
-
+- [ESP32 Conversational AI Clients](https://github.com/AgoraIO-Conversational-AI/esp32-client/tree/main)
 ---
 
 ## 许可证
