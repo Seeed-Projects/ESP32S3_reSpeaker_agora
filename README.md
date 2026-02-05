@@ -596,7 +596,7 @@ Agora provides real-time engagement APIs that power billions of minutes of live 
 - [Agora Documentation](https://docs.agora.io/)
 - [Agora IoT SDK](https://docs.agora.io/en/iot)
 - [Conversational AI Agent API](https://docs.agora.io/en/conversational-ai)
-
+- [ESP32 Conversational AI Clients](https://github.com/AgoraIO-Conversational-AI/esp32-client/tree/main)
 ---
 
 ## License
