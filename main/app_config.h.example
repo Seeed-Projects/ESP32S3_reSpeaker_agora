@@ -1,0 +1,62 @@
+#pragma once
+
+/* WiFi Configuration */
+#define WIFI_SSID              "your_wifi_ssid"
+#define WIFI_PASSWORD          "your_wifi_password"
+
+/* Agora Configuration */
+#define AGORA_APP_ID           "your_agora_app_id"
+#define AGORA_API_KEY          "your_agora_api_key"
+#define AGORA_API_SECRET       "your_agora_api_secret"
+
+/* Conversational AI Agent Configuration */
+#define CONVO_AGENT_NAME       "esp32_agent"
+#define CONVO_CHANNEL_NAME     "test_channel"
+#define CONVO_RTC_TOKEN        ""  // Leave empty if not using token, or paste your RTC token here
+#define CONVO_AGENT_RTC_UID    1001
+#define CONVO_REMOTE_RTC_UID   1002
+#define CONVO_IDLE_TIMEOUT     120
+#define CONVO_ENABLE_AIVAD     true
+#define BOARD_RTC_TOKEN        ""  // Board RTC token (if using token authentication)
+
+/* Legacy macros for backward compatibility */
+#define AI_AGENT_CHANNEL_NAME  CONVO_CHANNEL_NAME
+#define AI_AGENT_USER_ID       CONVO_REMOTE_RTC_UID
+
+/* LLM Configuration */
+#define LLM_URL                "https://api.openai.com/v1/chat/completions"
+#define LLM_API_KEY            "your_openai_api_key"
+#define LLM_MODEL              "gpt-4o-mini"
+#define LLM_SYSTEM_MESSAGE     "You are a helpful chatbot."
+#define LLM_MAX_HISTORY        32
+#define LLM_GREETING_MESSAGE   "Hello, how can I assist you today?"
+#define LLM_FAILURE_MESSAGE    "Please hold on a second."
+
+/* TTS Configuration - Choose vendor */
+#define USE_TTS_MICROSOFT    // Uncomment this line to use Microsoft TTS
+// #define USE_TTS_CARTESIA       // Comment this line to use Microsoft TTS
+
+/* Microsoft TTS Configuration */
+#define TTS_MICROSOFT_VENDOR      "microsoft"
+#define TTS_MICROSOFT_API_KEY     "your_microsoft_tts_api_key"
+#define TTS_MICROSOFT_REGION      "japanwest"
+#define TTS_MICROSOFT_VOICE_NAME  "en-US-AndrewMultilingualNeural"
+
+/* Cartesia TTS Configuration */
+#define TTS_CARTESIA_VENDOR       "cartesia"
+#define TTS_CARTESIA_API_KEY      "your_cartesia_api_key"
+#define TTS_CARTESIA_MODEL_ID     "sonic-2"
+#define TTS_CARTESIA_VOICE_MODE   "id"
+#define TTS_CARTESIA_VOICE_ID     "248be419-c632-4f23-adf1-5324ed7dbf1d"  // Replace with your voice ID
+#define TTS_CARTESIA_CONTAINER    "raw"
+#define TTS_CARTESIA_SAMPLE_RATE  16000
+#define TTS_CARTESIA_LANGUAGE     "en"
+
+/* ASR Configuration */
+#define ASR_LANGUAGE           "en-US"
+
+/* Function config */
+/* audio codec */
+#define CONFIG_USE_G711U_CODEC
+/* video process */
+// #define CONFIG_AUDIO_ONLY
